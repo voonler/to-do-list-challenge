@@ -14,28 +14,33 @@
 <body>
 
   <!--TODO-HEADER-->
-  <div class="todo-header">
-      <h1>To do</h1>
+  <div class="todo-header"></div>
+  
+  <!--MAIN TODO CONTAINER-->
+  <div class="todo-main">
+    <!--TODO HEADING -->
+    <div class="todo-heading">
+      <h1>Todo</h1>
       <!--Button icon for toggling between light and dark mode-->
       <a class="daylight-toggler"><img src="images/icon-moon.svg"></a>
-  </div>
-  <!--INPUT DIV -->
-  <div class="todo-input-container">
-    <form>
-      <input type="checkbox" class="checkbox">
-      <input type="text" class="todo-input" placeholder="Create a todo...">
-    </form>
-    <img>
-  </div>
-
-  <div class="todo-container">
-    <ul class="todo-list"></ul>
-    <div class="todo-footer">
-      <p><span></span>items left</p>
-      <a class="show-all">All</a>
-      <a class="show-active">Active</a>
-      <a class="show-completed">Completed</a>
-      <a class="clear-completed">Clear Completed</a>
+    </div>
+    <div class="todo-input-container">
+      <form class="todo-form">
+        <button class="btn"><img src="images/icon-check.svg"></button>
+        <input type="text" class="todo-input" placeholder="Create a todo...">
+      </form>
+    </div>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+      <div class="todo-footer">
+        <p><span></span>items left</p>
+        <div class="todo-states">
+          <a class="show-all">All</a>
+          <a class="show-active">Active</a>
+          <a class="show-completed">Completed</a>
+        </div>  
+        <a class="clear-completed">Clear Completed</a>
+      </div>
     </div>
   </div>
 
